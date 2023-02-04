@@ -5,22 +5,21 @@ from util import maybe
 
 
 def part_one(str_list):
-    res = map(lambda x: re.split("-|:? ", x), str_list)
     count = 0
-    for l, r, c, s in res:
-        if int(l) <= (Counter(s)[c] or 0) <= int(r):
-            count += 1
+    for i in range(len(str_list)):
+        index = (i * 3) % (len(str_list[0]) - 1)
+        count += 1 if str_list[i][index] == '#' else 0
 
     return count
 
 
 def part_two(str_list):
-    res = map(lambda x: re.split("-|:? ", x), str_list)
-    count = 0
-    for l, r, c, s in res:
-        lc = s[int(l)-1] or '_'
-        rc = s[int(r)-1] or '_'
-        if (lc == c and rc != c) or (lc != c and rc == c):
-            count += 1
+    total = 1
+    for j in range(1, 10, 2):
+        count = 0
+        for i in range(0, len(str_list), 2 if j == 9 else 1):
+            index = int(i * (0.5 if j == 9 else j)) % (len(str_list[0]) - 1)
+            count += 1 if str_list[i][index] == '#' else 0
+        total = total * count
 
-    return count
+    return total
