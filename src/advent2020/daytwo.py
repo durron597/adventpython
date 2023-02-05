@@ -1,8 +1,6 @@
 import re
 from collections import Counter
 
-from util import maybe
-
 
 def part_one(str_list):
     res = map(lambda x: re.split("-|:? ", x), str_list)

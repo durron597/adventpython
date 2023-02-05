@@ -1,5 +1,6 @@
-from advent2020 import daytwo
 from pathlib import Path
+
+from advent2020 import daytwo
 
 
 def test_day_two_part_one():

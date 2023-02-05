@@ -1,9 +1,3 @@
-import re
-from collections import Counter
-
-from util import maybe
-
-
 def part_one(str_list):
     count = 0
     for i in range(len(str_list)):
