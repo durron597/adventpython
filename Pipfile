@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pytest = "*"
+numpy = "1.24.2"
 
 [dev-packages]
 
