@@ -33,6 +33,7 @@ def play_game(start_str, stop):
             else:
                 q.append(v)
                 last = say(history, i, 0)
+        print("i: {}, n: {}".format(i, last))
 
     return last
 
