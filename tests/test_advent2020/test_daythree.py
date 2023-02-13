@@ -4,7 +4,7 @@ from advent2020 import daythree
 
 
 def test_day_three_part_one():
-    p = Path(__file__).parents[2] / 'resources' / 'day3_input.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day3_input.txt'
 
     f = p.open('r')
 
@@ -14,7 +14,7 @@ def test_day_three_part_one():
 
 
 def test_day_three_part_one_example():
-    p = Path(__file__).parents[2] / 'resources' / 'day3_example.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day3_example.txt'
 
     f = p.open('r')
 
@@ -24,7 +24,7 @@ def test_day_three_part_one_example():
 
 
 def test_day_three_part_two():
-    p = Path(__file__).parents[2] / 'resources' / 'day3_input.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day3_input.txt'
 
     f = p.open('r')
 
@@ -34,7 +34,7 @@ def test_day_three_part_two():
 
 
 def test_day_three_part_two_example():
-    p = Path(__file__).parents[2] / 'resources' / 'day3_example.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day3_example.txt'
 
     f = p.open('r')
 

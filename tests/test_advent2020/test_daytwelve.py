@@ -11,7 +11,7 @@ def test_turn():
 
 
 def test_part_one_example():
-    p = Path(__file__).parents[2] / 'resources' / 'day12_example.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day12_example.txt'
 
     f = p.open('r')
 
@@ -21,7 +21,7 @@ def test_part_one_example():
 
 
 def test_part_one():
-    p = Path(__file__).parents[2] / 'resources' / 'day12_input.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day12_input.txt'
 
     f = p.open('r')
 
@@ -31,7 +31,7 @@ def test_part_one():
 
 
 def test_part_two_example():
-    p = Path(__file__).parents[2] / 'resources' / 'day12_example.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day12_example.txt'
 
     f = p.open('r')
 
@@ -41,7 +41,7 @@ def test_part_two_example():
 
 
 def test_part_two():
-    p = Path(__file__).parents[2] / 'resources' / 'day12_input.txt'
+    p = Path(__file__).parents[2] / 'resources' / '2020' / 'day12_input.txt'
 
     f = p.open('r')
 
