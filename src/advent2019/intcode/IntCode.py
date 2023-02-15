@@ -5,13 +5,13 @@ class IntCode:
     def __init__(self, inst_size):
         self.inst = np.zeros(inst_size * 100, dtype=object)
         self.outp = []
-        self.inp = tuple([0])
+        self.inp = tuple()
         self.inpi = 0
         self.curr = 0
         self.rel = 0
 
     def process(self, ins, *inp):
-        self.inp = inp if inp else tuple([0])
+        self.inp = inp if inp else tuple()
         self.outp = []
         self.inpi = 0
         self.curr = 0
@@ -110,3 +110,9 @@ class IntCode:
 
     def get_stop_command(self):
         return self.inst[self.curr]
+
+    def get_output(self):
+        return self.outp
+
+    def reset_output(self):
+        self.outp = []

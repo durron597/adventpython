@@ -1,15 +1,9 @@
 import re
-from enum import Enum
 
 import numpy as np
 from numpy import int16, int32
 
-
-class DirEnum(Enum):
-    D = (1, 0)
-    U = (-1, 0)
-    L = (0, -1)
-    R = (0, 1)
+from util.DirEnum import DirEnum
 
 
 def bounds(grid, rc):
